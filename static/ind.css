@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(246, 127, 255);
+}
+
+td {
+
+    border: 2px solid block;
+    margin: 5px;
+    color: aliceblue;
+    font-size: 18px;
+    padding:5px;
+    text-align:center;
+}
+.tableColor{
+background-color: #4649FF;
+}
+.tab{
+background-color: blueviolet;}
+th {
+
+    border: 2px solid blue;
+    color: azure;
+    margin: 5px;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+}

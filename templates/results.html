@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Details</title>
+  <link href="/static/ind.css" rel="stylesheet">
+</head>
+<body>
+
+    <div>
+      <h1> Movie details</h1>
+        <table>
+            <tr class="tableColor">
+                <th>TypeOfSarch</th>
+                <th>MovieName</th>
+                <th>MovieUrl</th>
+                <th>HighestRating</th>
+                <th>LowRating</th>
+                 <th>AVG rating</th>
+                <th>TotalUsers</th>
+                <th>MovieGenr</th>
+                <th>ReleseDate</th>
+                <th>MovieHero</th>
+                <th>MovieCast</th>
+                <th>Moviecast</th>
+                <th>MovieDirector</th>
+                <th>MovieDuration</th>
+            </tr>
+            {% for review in reviews %}
+            <tr class="tab">
+                <td>
+                    {{review['TypeOfSarch']}}
+                </td>
+                <td>
+                    {{review['MovieName']}}
+                </td>
+                <td>
+                    {{review['MovieUrl']}}
+                </td>
+                <td>
+                    {{review['HighestRating']}}
+                </td>
+                <td>
+                    {{review['LowRating']}}
+                </td>
+                <td>
+                    {{review['avarageRating']}}
+                </td>
+                <td>
+                    {{review['TotalUsers']}}
+                </td>
+                <td>
+                    {{review['MovieGenr']}}
+                </td>
+                <td>
+                    {{review['ReleseDate']}}
+                </td>
+                <td>
+                    {{review['MovieHero']}}
+                </td>
+                <td>
+                    {{review['MovieSupport']}}
+                </td>
+                <td>
+                    {{review['MovieFemale']}}
+                </td>
+                <td>
+                    {{review['MovieDirector']}}
+                </td>
+                <td>
+                    {{review['MovieDuration']}}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
